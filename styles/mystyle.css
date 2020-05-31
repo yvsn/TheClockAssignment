@@ -1,0 +1,51 @@
+*,*::after, *::before{
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: gray;
+}
+
+.clock{
+  position: relative;
+  width: 300px;
+  Height: 300px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.clock .hand{
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 10px;
+  height: 50%;
+  background-color: black;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  transform-origin: bottom;
+}
+
+.clock .number{
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.clock .clock1 { --rotation: 30deg; }
+.clock .clock2 { --rotation: 60deg; }
+.clock .clock3 { --rotation: 90deg; }
+.clock .clock4 { --rotation: 120deg; }
+.clock .clock5 { --rotation: 150deg; }
+.clock .clock6 { --rotation: 180deg; }
+.clock .clock7 { --rotation: 210deg; }
+.clock .clock8 { --rotation: 240deg; }
+.clock .clock9 { --rotation: 270deg; }
+.clock .clock10 { --rotation: 300deg; }
+.clock .clock11 { --rotation: 330deg; }
+.clock .clock12 { --rotation: 360deg; }
