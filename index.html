@@ -8,8 +8,9 @@
 			<script src="scripts/main.js" defer></script>
 </head>
 <body>
-	<div class= "bg"></div>
-	<section class= ClockContainer>
+	<div class= "untoggled" id="untoggled"></div>
+	<div class= "toggled"></div>
+	<section class= "ClockContainer">
 	<div class= "clock">
 		<div class= "hand second" second-hand></div>
 			<div class= "hand minute" minute-hand></div>
@@ -27,6 +28,13 @@
 				<div class= "number clock11">11</div>
 				<div class= "number clock12">12</div>
 	</div>
+</section>
+<section class= "datecontainer">
+		<p id="currentdate"></p>
+	</div>
+</section>
+<section class= "buttoncontainer" >
+<button class ="btn" onclick="background()">Change Background</button>
 </section>
 </body>
 </html>
