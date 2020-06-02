@@ -46,6 +46,7 @@ p {
     left:0;
     right: 0;
 }
+
 .toggled{
     background-image: url(../images/mars.jpg);
     background-position: center;
@@ -58,14 +59,15 @@ p {
     left:0;
     right: 0;
 }
+
 .ClockContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
-
 }
+
 .clock{
   position: relative;
   width: 60vh;
@@ -93,11 +95,13 @@ p {
   height: 45%;
   background-color: gray;
 }
+
 .clock .hand.minute{
   width: 8px;
   height: 35%;
   background-color: black;
 }
+
 .clock .hand.hour{
   width: 10px;
   height: 30%;
@@ -116,6 +120,7 @@ p {
   left: 50%;
   background-color: black;
 }
+
 .clock .number{
   --rotation: 0;
   position: absolute;
@@ -138,7 +143,6 @@ p {
 .clock .clock10 { --rotation: 300deg; }
 .clock .clock11 { --rotation: 330deg; }
 .clock .clock12 { --rotation: 360deg; }
-
 
 .buttoncontainer{
   padding-top: 25px;
