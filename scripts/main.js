@@ -37,8 +37,11 @@ setRotation(hourHand, hour)
 
 function  setRotation(hands, rotationRatio) {
   hands.style.setProperty('--rotation', rotationRatio *360)
-
+  if(rotationRatio ===  0){
+  hands.style.background = "red";
+  }
+  else{
+  hands.style.background = "black";
+  }
 }
 clock();
-
-secondHand.style.background = "#f3f3f3";
