@@ -95,12 +95,12 @@ p {
 }
 .clock .hand.minute{
   width: 8px;
-  height: 40%;
+  height: 35%;
   background-color: black;
 }
 .clock .hand.hour{
   width: 10px;
-  height: 35%;
+  height: 30%;
   background-color: black;
 }
 
